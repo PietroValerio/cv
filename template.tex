@@ -1,0 +1,138 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
+
+\usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage[italian]{babel}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+	pdftitle={CV - Pietro Valerio},
+	pdfauthor={Pietro Valerio},
+	pdfsubject={Curriculum Vitae},
+	pdfkeywords={Ingegneria Meccatronica, ROS 2, Controllo Avanzato, IT}
+}
+
+%------------------------------------------------
+
+\name{Pietro Valerio} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{Arcugnano, Vicenza} % Main address
+
+
+\address{3488341400 \\ pietro.valerio12@gmail.com} % Contact information
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Formazione}
+	
+	\textbf{Università di Padova} \hfill \textit{Ottobre 2019 - Settembre 2022} \\ 
+	Laurea triennale in Ingegneria Meccatronica \smallskip \\
+	Votazione: 96/110
+	
+	\textbf{Università di Padova} \hfill \textit{Settembre 2022 - Aprile 2025} \\ 
+	Laurea magistrale in Ingegneria Meccatronica \smallskip \\
+		Votazione: 105/110\\
+	Tesi: Migliorare l'interazione uomo robot attraverso la predizione in tempo reale del movimento umano.
+	\begin{itemize}
+
+	\item \textbf{Progettazione software}: Sviluppo di una pipeline in ambiente ROS 2 per l'aggregazione di dati da sensori inerziali, finalizzata alla stima accurata della posa dell'operatore.
+	
+	\item\textbf{ Deep Learning \& Teleoperazione}: Integrazione di modelli di deep learning (sviluppati dal gruppo di ricerca ospitante) per la predizione del movimento in tempo reale, ottimizzando l'invio di comandi a un robot teleoperato tramite logiche predittive.
+	
+	\item \textbf{Controllo Avanzato}: Implementazione di algoritmi di visual servoing basati sullo stato dell'arte della letteratura scientifica, garantendo un controllo a bassa latenza e bypassando i sistemi standard di pianificazione del moto.
+	
+	\end{itemize}
+
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%    PROGETTI ACCADEMICI SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Progetti Accademici}
+	
+	\textbf{Laboratorio di Sistemi di Controllo} \hfill \textit{2024} \\
+	Modellistica, simulazione e implementazione di algoritmi di controllo per un pendolo inverso in ambiente Matlab. Progettazione di un controllore LQR con stima dello stato, includendo l'analisi di stabilità e la validazione delle prestazioni. Sviluppo di una strategia di \textit{swing-up} per l'innalzamento automatico del pendolo e controllo del motore tramite \textit{load observer}. Validazione del sistema di controllo sia per il mantenimento dell'equilibrio statico (reiezione dei disturbi) sia durante l'inseguimento di specifiche traiettorie di moto della base (\textit{trajectory tracking}).
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Esperienze Professionali}
+
+	\begin{rSubsection}{Graphicom s.r.l}{Giugno 2025 - Presente}{IT Department}{Vicenza}
+		\item Gestione dell'infrastruttura IT aziendale e supporto tecnico.
+		\item Analisi dei requisiti e sviluppo di applicazioni software interne per l'ottimizzazione e l'automazione dei processi aziendali.
+		\item Sviluppo di un sistema di ticketing digitale per la gestione della manutenzione, integrando cruscotti analitici per il monitoraggio di KPI critici (Response Time, MTTR, MTTF, MTBF, tasso di riapertura).
+		\item Progettazione e sviluppo di un'applicazione mobile (Kotlin) per il tracciamento logistico dei prodotti finiti, implementata per certificare i carichi e azzerare le contestazioni dei clienti.
+	\end{rSubsection}
+
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Competenze Tecniche}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		Linguaggi di Programmazione & C, C++, Matlab, Python,Kotlin\\
+		Robotica \& Controlli & ROS 2, Visual Servoing, Controllo Avanzato \\
+		Database & PostgreSQL \\
+		Strumenti & Git, Vim\\
+		Lingue & Italiano (Madrelingua), Inglese (B2)
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
